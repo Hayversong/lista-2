@@ -1,0 +1,6 @@
+
+Sendo p um ponteiro, qual a diferença entre:
+• p++;  incrementa o ponteiro, ou seja, p avança para o próximo elemento
+• (*p)++;   incrementa o valor apontado por p
+• *(p++);   retorna o valor atual apontado por p e depois incrementa p
+• O que quer dizer *(p+10); retorna o valor 10 posições à frente de p (sem alterar p)
