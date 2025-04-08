@@ -29,7 +29,7 @@ void libera_matriz(int **mat, int m) {
 }
 
 
-main(){
+int main(){
     int  **mat = NULL, m, n, i, j;
     printf("Quantas linhas a matriz tera? ");
     scanf("%d", &m);
@@ -45,7 +45,7 @@ main(){
             scanf("%d", &mat[i][j]);
         }
     }
-
+    
     printf("\n\n resultado.\n");
     for(i = 0; i < m; i++){
         for(j = 0; j < n; j++){
@@ -58,4 +58,3 @@ main(){
 }
 
 /*Primeiro lê-se m e n, então chama a função para ler a matriz, e alocar dinamicamente, usa 1 malloc para alocar o vetor de ponteiros (nesse caso são as linhas), e m mallocs para as colunas, na função main os valores são lidos e impressos, por ultimo chama a função liberar_matriz para dar free nas linhas e colunas*/
-
